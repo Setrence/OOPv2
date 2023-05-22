@@ -25,4 +25,10 @@ public class Misk implements CatEatting {
     public void MiskInfo() {
         System.out.println("plate: " + food);
     }
+
+    public void Dobavka (int food){
+        this.food = food + 20;
+        System.out.println("Добавили 20 единиц в миску! ");
+    }
+
 }

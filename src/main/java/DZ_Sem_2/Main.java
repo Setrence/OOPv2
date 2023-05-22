@@ -33,6 +33,7 @@ public class Main {
                     System.out.printf("%s наелся и сыт! ", cat.getName());
                 } else {
                     System.out.printf("Для %s не хватило еды в миске! ", cat.getName());
+                    misk.Dobavka(misk.getFood());
                 }
             }
         }
