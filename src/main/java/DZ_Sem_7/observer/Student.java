@@ -12,11 +12,12 @@ public class Student implements Observer {
 
     @Override
     public void receiveOffer(JobVacancy vacancy) {
-        if (this.salary < vacancy.getSalary()){
-            System.out.printf("Мастер %s >>> Мне нужна эта работа! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
-        }
-        else {
-            System.out.printf("Мастер %s >>> Я найду работу получше! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
+        if (this.salary < vacancy.getSalary()) {
+            if (vacancy.getSpecialization().equals("Freelanser")) {
+                System.out.printf("Студент %s >>> Мне нужна эта работа! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
+            } else {
+                System.out.printf("Студент %s >>> Я найду работу получше! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
+            }
         }
     }
 }

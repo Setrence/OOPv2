@@ -32,7 +32,7 @@ public class Program {
         jobAgency.registerObserver(petrov);
         jobAgency.registerObserver(igor);
 
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 3; i++){
             geekBrains.needEmployee(midll);
             geekBrains.needEmployee(junior);
             google.needEmployee(freelans);
