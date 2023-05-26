@@ -27,4 +27,8 @@ public class Company {
         jobAgency.sendOffer(nameCompany, salary);
     }
 
+    public void generateJob(){
+
+    }
+
 }

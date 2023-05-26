@@ -4,7 +4,7 @@ public class Program {
 
     /**
      * TODO: Доработать приложение, поработать с шаблоном проектирования Observer,
-     *  добавить новый тип соискателя.
+     *  добавить новый тип соискателя. - готово
      *  Добавить новую сущность "Вакансия", компания должна рассылать вакансии.
      * @param args
      */
@@ -17,10 +17,12 @@ public class Program {
         Master ivanov = new Master("Ivanov");
         Master sidorov = new Master("Sidorov");
         Student petrov = new Student("Petrov");
+        Programer igor = new Programer("Igor");
 
         jobAgency.registerObserver(ivanov);
         jobAgency.registerObserver(sidorov);
         jobAgency.registerObserver(petrov);
+        jobAgency.registerObserver(igor);
 
         for (int i = 0; i < 10; i++){
             geekBrains.needEmployee();
