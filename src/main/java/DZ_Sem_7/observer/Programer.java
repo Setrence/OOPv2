@@ -6,16 +6,16 @@ public class Programer implements Observer{
 
     public Programer(String name) {
         this.name = name;
-        salary = 100000;
+        salary = 110000;
     }
 
     @Override
     public void receiveOffer(JobVacancy vacancy) {
         if (this.salary < vacancy.getSalary()) {
             if (vacancy.getSpecialization().equals("ITSecialist")) {
-                System.out.printf("Программист %s >>> Мне нужна эта работа! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
+                System.out.printf("Программист %s >>> Мне нужна эта работа! [%s - %.2f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
             } else {
-                System.out.printf("Программист %s >>> Я найду работу получше! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
+                System.out.printf("Программист %s >>> Я найду работу получше! [%s - %.2f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
             }
         }
     }

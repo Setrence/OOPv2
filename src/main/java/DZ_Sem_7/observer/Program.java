@@ -5,14 +5,14 @@ public class Program {
     /**
      * TODO: Доработать приложение, поработать с шаблоном проектирования Observer,
      *  добавить новый тип соискателя. - готово
-     *  Добавить новую сущность "Вакансия", компания должна рассылать вакансии.
+     *  Добавить новую сущность "Вакансия", компания должна рассылать вакансии. - готово
      * @param args
      */
     public static void main(String[] args) {
         JobAgency jobAgency = new JobAgency();
-        Company geekBrains = new Company("GeekBrains", 70000, jobAgency);
-        Company google = new Company("Google", 100000, jobAgency);
-        Company yandex = new Company("Yandex", 120000, jobAgency);
+        Company geekBrains = new Company("GeekBrains", 40000, jobAgency);
+        Company google = new Company("Google", 50000, jobAgency);
+        Company yandex = new Company("Yandex", 10000, jobAgency);
 
         Master ivanov = new Master("Ivanov");
         Master sidorov = new Master("Sidorov");
@@ -22,7 +22,6 @@ public class Program {
         JobVacancy midll = new ITSecialist("ITSecialist", 100000, "2/2");
         JobVacancy junior = new ITSecialist("ITSecialist", 60000, "2/2");
         JobVacancy repmaster = new RepareMaster("RepareMaster", 80000, "5/2");
-        JobVacancy repmaster2 = new RepareMaster("RepareMaster", 60000, "5/2");
         JobVacancy freelans = new Freelanser("Freelanser", 40000, "free");
 
 

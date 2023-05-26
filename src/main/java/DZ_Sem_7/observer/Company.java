@@ -23,7 +23,7 @@ public class Company {
      * Поиск сотрудника
      */
     public void needEmployee(JobVacancy vacancy){
-        vacancy.setSalary(random.nextDouble(10000, 50000) + maxSalary);
+        vacancy.setSalary(random.nextDouble(10000, 80000) + maxSalary);
         jobAgency.sendOffer(vacancy);
     }
 

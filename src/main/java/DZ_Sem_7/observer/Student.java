@@ -14,9 +14,9 @@ public class Student implements Observer {
     public void receiveOffer(JobVacancy vacancy) {
         if (this.salary < vacancy.getSalary()) {
             if (vacancy.getSpecialization().equals("Freelanser")) {
-                System.out.printf("Студент %s >>> Мне нужна эта работа! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
+                System.out.printf("Студент %s >>> Мне нужна эта работа! [%s - %.2f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
             } else {
-                System.out.printf("Студент %s >>> Я найду работу получше! [%s - %f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
+                System.out.printf("Студент %s >>> Я найду работу получше! [%s - %.2f]\n", name, vacancy.getSpecialization(), vacancy.getSalary());
             }
         }
     }
