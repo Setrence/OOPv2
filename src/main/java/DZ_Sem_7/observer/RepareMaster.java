@@ -13,4 +13,22 @@ public class RepareMaster implements JobVacancy{
         this.salary = salary;
         this.graphik = graphik;
     }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    @Override
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getGraphik() {
+        return graphik;
+    }
+
+    @Override
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 }

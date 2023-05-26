@@ -18,15 +18,11 @@ public class JobAgency implements Publisher {
         observers.remove(observer);
     }
 
-    /**
-     * Реализация рассылки сообщений
-     * @param nameCompany
-     * @param salary
-     */
     @Override
-    public void sendOffer(String nameCompany, double salary) {
+    public void sendOffer(JobVacancy vacancy) {
         for (Observer observer : observers){
-            observer.receiveOffer(nameCompany, salary);
+            observer.receiveOffer(vacancy);
         }
     }
+
 }

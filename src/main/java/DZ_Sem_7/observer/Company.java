@@ -22,13 +22,11 @@ public class Company {
      *  объект в агенство.
      * Поиск сотрудника
      */
-    public void needEmployee(){
-        double salary = random.nextDouble(3000, maxSalary);
-        jobAgency.sendOffer(nameCompany, salary);
+    public void needEmployee(JobVacancy vacancy){
+
+        jobAgency.sendOffer(vacancy);
     }
 
-    public void generateJob(){
 
-    }
 
 }
